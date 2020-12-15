@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-auth-angular10": {
+      "hosting": {
+        "firebase-auth": [
+          "fir-auth-angular10"
+        ]
+      }
+    }
+  }
+}
