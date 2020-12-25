@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row justify-content-center p-4">
+        <div class="col-md-6">
+            <form (ngSubmit)='onLogin()'>
+            <h1>fireBase login</h1>
+            <div class="from-group p-2">
+                <input type="email" name = "login" [(ngModel)]="email" class="from-control" placeholder="EmailID" required>
+            </div>
+            <div class="from-group p-2">
+                <input type="password" name = "login" [(ngModel)]="password" class="from-control" placeholder="Password" required>
+            </div>
+            <div class="from-group p-2">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="register"><a href="#" routerLink="/register">New User Register</a></div>
+            </div>
+            </form>
+            </div>
+    </div>
+</div>

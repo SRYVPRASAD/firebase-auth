@@ -1,1 +1,32 @@
-<p>register works!</p>
+<div class="container">
+    <div class="row justify-content-center p-4">
+        <div class="col-md-6">
+            <form (ngSubmit)='onRegister()'>
+                <h1>fireBase Register</h1>
+                <div class="from-group p-2">
+                    <input type="email" name = "login" [(ngModel)]="email" class="from-control" placeholder="EmailID" required>
+                </div>
+                <div class="from-group p-2">
+                    <input type="password" name = "login" [(ngModel)]="password" class="from-control" placeholder="Password" required>
+                </div>
+                <div class="from-group p-2">
+                    <button type="submit" class="btn btn-primary">SignUp</button>
+                    <div class="login"><a href="#" routerLink="/login">Back to login</a></div>
+                </div>
+            </form>
+            <div class="form-group">
+                <p *ngIf ="error.message.length > 0" class ="text-danger">
+                    {{error.message}}
+                </p>
+            <p *ngIf ="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}
+            </p>
+            <p *ngIf ="succesMessage.length > 0" class="text-info">
+                {{succesMessage}}
+            </p>
+
+            
+        </div>
+        </div>
+    </div>
+</div>
